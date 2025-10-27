@@ -15,7 +15,6 @@ body a {
     width: 100%;
     min-width: 300px;
     height: 100vh;
-    background: url('../img/bg.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -31,13 +30,14 @@ header {
     font-family: 'Poppins', sans-serif;
 }
 
-.logo-area > img {
+.logo-area {
     width: 100px;
     height: auto;
 }
 
 .course-title {
     color: white;
+    background-color: tomato;
 }
 .course-title h1 {
     font-size: 24px;
