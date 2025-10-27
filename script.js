@@ -1,4 +1,5 @@
-// Excercise 1
+// API: https://date.nager.at/swagger/index.html
+// Response example: https://date.nager.at/api/v3/PublicHolidays/2025/AT
 
 function get_countries() {
     $.ajax( {
@@ -47,7 +48,6 @@ function get_holidays ( countryCode ) {
     var year = new Date().getFullYear();
 
     $.ajax( {
-        //url : "https://holidayapi.com/v1/holidays?pretty&key=" + "67530ba6-3f7b-496e-98b9-30bda6337407" + "&country=" + countryCode +"&year=" + year,
         url: "https://date.nager.at/api/v3/PublicHolidays/2025" + "/" + countryCode + "/",
         type: "GET",
         dataType: "json",
